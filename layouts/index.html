@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link href="/dist/output.css" rel="stylesheet">
+
+  <!-- title -->
+  <title>Hot News</title>
+
+  <!-- icon title -->
+  <link rel="icon" href="../images/world.png">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- swiper -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+</head>
+<body class="select-none">
+    <!-- navbar -->
+
+    <nav class="bg-white shadow-lg fixed top-0 left-0 right-0 z-10">
+        <div class="max-w-6xl mx-auto py-3">
+            <div class="flex justify-between items-center">
+                <!-- logo -->
+                <button class="flex items-center lg:gap-x-5 gap-x-2">
+                    <a href="/layouts/index.html"><img src="../images/world.png" alt="logo" class="lg:w-16 w-12 ml-5 lg:ml-0 animate-spin-slow"></a>
+                    <h1 class="font-bold lg:text-5xl text-xl text-red-500">HOT <span class="text-emerald-500">NEWS</span></h1>
+                </button>
+
+                <!-- nav search -->
+                <div class="md:flex">
+                    <label class="relative block">
+                        <span class="sr-only">Search</span>
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.50" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </span>
+                        <input class="placeholder:text-slate-400 block bg-white lg:w-96 w-56 border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-primary focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                    </label>
+                </div>
+    
+                <!-- nav button -->
+                <div class="md:flex space-x-4 hidden items-center">
+                    <h1>Halo, <b>Husain Rahmani</b></h1>
+                    <div class="dropdown dropdown-hover dropdown-bottom dropdown-end">
+                        <button><img src="../images/sain.png" alt="avatar" class="w-12 rounded-full"></button>
+                    </div>
+                </div>
+    
+                <!-- button mobile -->
+                <div class="mobile-nav-button md:hidden flex pr-6">
+                    <button class="items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- mobile nav -->
+        <div class="hidden mobile-nav justify-center pb-5">
+    
+            <div class="flex items-center justify-center">
+                <a href="" class="flex items-center">
+                    <img src="../images/sain.png" alt="avatar" class="w-16 rounded-full pr-3">
+                    <h1>Halo, <b>Husain Rahmani</b></h1>
+                </a>
+            </div>
+            
+        </div>
+    
+        <script>
+            const btn = document.querySelector(".mobile-nav-button");
+            const menu = document.querySelector(".mobile-nav");
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    
+    </nav>
+
+    <!-- end navbar -->
+
+    <!-- content -->
+
+    <div class="lg:max-w-6xl w-full px-6 lg:px-0 mx-auto lg:mt-32 mt-24">
+
+        <!-- swiper -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper rounded-box">
+                <div class="swiper-slide">
+                    <img
+                        class="object-cover w-full lg:h-128 h-44 rounded-lg"
+                        src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA14qk7L.img?h=315&w=600&m=6&q=60&o=t&l=f&f=jpg"
+                        alt="image"
+                    />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        class="object-cover w-full lg:h-128 h-44 rounded-lg"
+                        src="https://akcdn.detik.net.id/visual/2019/11/16/1a6c82e7-a220-416f-89ca-d0bf27b2dd6b_169.jpeg?w=650"
+                        alt="image"
+                    />
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        class="object-cover w-full lg:h-128 h-44 rounded-lg"
+                        src="https://akcdn.detik.net.id/visual/2022/11/22/bangunan-hancur-dan-pencarian-korban-di-cugenang-cianjur-14_169.jpeg?w=350&q=90"
+                        alt="image"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- end swiper -->
+
+        <!-- news -->
+
+        <h1 class="font-bold text-3xl text-center lg:text-left pt-16">Berita Terkini</h1>
+        <div class="products-popular lg:max-w-6xl mx-auto pt-5 py-3">
+            <div class="grid gap-3 p-6 lg:p-0 grid-cols-2 lg:grid-cols-4">
+
+                <!-- card -->
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <a href="./desc.html">
+                    <div class="card max-w-60 bg-base-100 border border-slate-200 shadow-xl hover:-translate-y-1 hover:scale-95 duration-500 rounded-lg">
+                        <figure class="">
+                            <img src="https://assets.promediateknologi.com/crop/0x0:0x0/0x0/photo/2022/11/21/2042925042.jpg" alt="Shoes" class="rounded-t-md rounded-b-sm h-full" />
+                        </figure>
+                        <div class="desc">
+                            <p class="text-sm px-3 pt-4">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</p>
+                            <div class="px-3 pt-2 pb-3 block">
+                                <div class="address flex space-x-2 pt-4 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                    <p class="font-bold text-sm">Kabupaten Cianjur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>  
+                <!-- end card -->
+            </div>
+        </div>
+
+        <!-- end news -->
+
+    </div>
+
+    <!-- end content -->
+
+    <!-- footer -->
+
+    <footer class="bg-slate-200 w-full mt-10 pb-10">
+        <div class="max-w-6xl grid lg:grid-cols-2 lg:mx-auto pt-10">
+            <div class="image">
+                <img src="../images/world.png" alt="logo" class="animate-spin-slow w-48 mx-auto">
+                <h1 class="font-bold text-red-500 text-6xl text-center mt-5">HOT <span class="text-emerald-500">NEWS</span></h1>
+            </div>
+            <div class="grid lg:grid-cols-3 grid-cols-2 mx-auto lg:mx-0 mt-10">
+                <div class="hotnews">
+                    <h2 class="text-xl font-bold">Hot News</h2>
+                    <div class="text-slate-500 pt-2">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">About us</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Contact us</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Location</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">1453</a>
+                    </div>
+                    <h2 class="text-xl font-bold pt-7">News</h2>
+                    <div class="text-slate-500 pt-2">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum dolor.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem ipsum sit.</a>
+                    </div>
+                </div>
+                <div class="news">
+                    <h2 class="text-xl font-bold">News</h2>
+                    <div class="text-slate-500 pt-2">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum dolor.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem ipsum sit.</a>
+                    </div>
+                    <h2 class="text-xl font-bold lg:pt-14 pt-14">News</h2>
+                    <div class="text-slate-500 pt-2">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum dolor.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem ipsum sit.</a>
+                    </div>
+                </div>
+                <div class="socmed">
+                    <h2 class="text-xl font-bold lg:mt-0 mt-5">Follow Us</h2>
+                    <div class="pt-2 w-32 text-slate-500">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Instagram</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Youtube</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end footer -->
+
+
+    <!-- script swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          autoplay: {
+            delay: 5500,
+            disableOnInteraction: false,
+          },
+          loop : true,
+          spaceBetween: 30,
+          centeredSlides: true,
+          // mousewheel: true,
+          // keyboard: true,
+        });
+      </script>
+    <!-- end script swiper -->
+</body>
+</html>

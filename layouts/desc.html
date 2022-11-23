@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <title>Deskripsi</title>
+</head>
+<body class="select-none">
+    
+    <!-- navbar -->
+
+    <nav class="bg-white shadow-lg fixed top-0 left-0 right-0 z-10">
+        <div class="max-w-6xl mx-auto py-3">
+            <div class="flex justify-between items-center">
+                <!-- logo -->
+                <a href="/layouts/index.html">
+                    <button class="flex items-center lg:gap-x-5 gap-x-2">
+                        
+                            <img src="../images/world.png" alt="logo" class="lg:w-16 w-12 ml-5 lg:ml-0 animate-spin-slow">
+                    
+                            <h1 class="font-bold lg:text-5xl text-xl text-red-500">HOT <span class="text-emerald-500">NEWS</span></h1>
+                        
+                    </button>
+                </a>
+
+                <!-- nav search -->
+                <div class="md:flex">
+                    <label class="relative block">
+                        <span class="sr-only">Search</span>
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.50" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </span>
+                        <input class="placeholder:text-slate-400 block bg-white lg:w-96 w-56 border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-primary focus:ring-1 sm:text-sm" placeholder="Search for anything..." type="text" name="search"/>
+                    </label>
+                </div>
+    
+                <!-- nav button -->
+                <div class="md:flex space-x-4 hidden items-center">
+                    <h1>Halo, <b>Husain Rahmani</b></h1>
+                    <div class="dropdown dropdown-hover dropdown-bottom dropdown-end">
+                        <button><img src="../images/sain.png" alt="avatar" class="w-12 rounded-full"></button>
+                    </div>
+                </div>
+    
+                <!-- button mobile -->
+                <div class="mobile-nav-button md:hidden flex pr-6">
+                    <button class="items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- mobile nav -->
+        <div class="hidden mobile-nav justify-center pb-5">
+    
+            <div class="flex items-center justify-center">
+                <a href="" class="flex items-center">
+                    <img src="../images/sain.png" alt="avatar" class="w-16 rounded-full pr-3">
+                    <h1>Halo, <b>Husain Rahmani</b></h1>
+                </a>
+            </div>
+            
+        </div>
+    
+        <script>
+            const btn = document.querySelector(".mobile-nav-button");
+            const menu = document.querySelector(".mobile-nav");
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    
+    </nav>
+
+    <!-- end navbar -->
+
+    <!-- content -->
+
+    <div class="lg:max-w-6xl w-full px-6 lg:px-0 mx-auto lg:mt-32 mt-24">
+
+        <img class="w-full lg:h-130 h-44 rounded-lg"
+        src="https://cdn.bmkg.go.id/Web/WhatsApp-Image-2022-11-21-at-16.35.42.jpeg"
+        alt="image">
+
+        <h1 class="font-bold lg:text-4xl text-xl mt-5">Gempa Cianjur, BMKG : Waspada Bencana Lanjutan Longsor dan Banjir Bandang</h1>
+
+        <p class="text-slate-500 pt-5 leading-relaxed">
+            Badan Meteorologi, Klimatologi, dan Geofisika (BMKG) meminta masyarakat di Kabupaten Cianjur, Jawa Barat mewaspasai bencana lanjutan berupa tanah longsor dan banjir bandang usai guncangan gempa magnitudo 5,6. Kepala BMKG, Dwikorita Karnawati mengatakan imbauan ini dikhususkan bagi masyarakat Cianjur yang bermukim di daerah lereng-lereng perbukitan dan di lembah atau bantaran sungai. Menurutnya, besar kemungkinan lereng-lereng perbukitan di Cianjur menjadi rapuh usai terjadinya gempa bumi. Hal ini dapat semakin diperparah dengan tingginya intensitas hujan yang berpotensi mengguyur Cianjur.
+            "Lereng-lereng yang rapuh ini ditambah hujan deras dapat memicu terjadinya longsor dan banjir bandang dengan membawa material runtuhan lereng. Jadi masyarakat dan pemerintah setempat juga perlu mewaspadai adanya kolateral hazard atau bahaya ikutan usai gempa kemarin," imbuhnya. Dwikorita menyampaikan, banyaknya korban jiwa dalam peristiwa gempa Cianjur akibat tertimpa bangunan yang tidak mampu menahan guncangan gempa. Sebagai informasi, Gubernur Jawa Barat Ridwan Kamil mengonfirmasikan ada sebanyak 162 korban yang meninggal dunia dan 326 luka-luka akibat gempa Cianjur.
+            "Sebenarnya gempa tidak membunuh dan melukai. Justru, bangunanlah yang membunuh dan melukai manusia. Lebih lanjut, Dwikorita meminta masyarakat untuk menghindari bangunan yang retak atau rusak diakibatkan oleh gempa bumi. Karena dikhawatirkan tidak kuat menopang dan ambruk jika sewaktu-waktu terjadi gempa susulan. "Untuk sementara jangan memaksakan kembali ke rumah jika bangunannya rusak atau retak-retak. Hingga pukul 06.00 WIB, 22 November 2022, telah terjadi 117 gempa susulan dengan terbesar tinggi getaran 4.2 dan terkecil 1.5 magnitudo," ujarnya.
+            Dwikorita juga meminta masyarakat untuk tetap tenang namun waspada dan tidak serta-merta mempercayai informasi ataupun berita yang tidak jelas asal-usulnya dan tidak dapat dipertanggungjawabkan kebenarannya.
+            "Pastikan informasi resmi hanya bersumber dari BMKG yang disebarkan melalui kanal-kanal komunikasi resmi BMKG," ujarnya.
+        </p>
+
+        <p class="font-bold mt-5">
+            JAKARTA (22 November 2022)
+        </p>
+
+    </div>
+
+    <!-- end content -->
+
+    <!-- footer -->
+
+    <footer class="bg-slate-200 w-full mt-10 pb-10">
+        <div class="max-w-6xl grid lg:grid-cols-2 lg:mx-auto pt-10">
+            <div class="image">
+                <img src="../images/world.png" alt="logo" class="animate-spin-slow w-48 mx-auto">
+                <h1 class="font-bold text-red-500 text-6xl text-center mt-5">HOT <span class="text-emerald-500">NEWS</span></h1>
+            </div>
+            <div class="grid lg:grid-cols-3 grid-cols-2 mx-auto lg:mx-0 mt-10">
+                <div class="hotnews">
+                    <h2 class="text-xl font-bold">Hot News</h2>
+                    <div class="text-slate-500 pt-2">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">About us</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Contact us</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Location</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">1453</a>
+                    </div>
+                    <h2 class="text-xl font-bold pt-7">News</h2>
+                    <div class="text-slate-500 pt-2">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum dolor.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem ipsum sit.</a>
+                    </div>
+                </div>
+                <div class="news">
+                    <h2 class="text-xl font-bold">News</h2>
+                    <div class="text-slate-500 pt-2">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum dolor.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem ipsum sit.</a>
+                    </div>
+                    <h2 class="text-xl font-bold lg:pt-14 pt-14">News</h2>
+                    <div class="text-slate-500 pt-2">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem, ipsum dolor.</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Lorem ipsum sit.</a>
+                    </div>
+                </div>
+                <div class="socmed">
+                    <h2 class="text-xl font-bold lg:mt-0 mt-5">Follow Us</h2>
+                    <div class="pt-2 w-32 text-slate-500">
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Instagram</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Youtube</a>
+                        <a href="" class="hover:text-emerald-600 hover:font-bold block pt-1">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end footer -->
+
+</body>
+</html>
